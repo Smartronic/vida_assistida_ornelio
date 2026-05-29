@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# UV
+api/.venv/
+api/.env
+
+# ChromaDB local
+api/app/data/chroma/
+!api/app/data/chroma/.gitkeep
+api/app/data/raw/*.pdf
+!api/app/data/raw/.gitkeep
+
+# SQLite local
+*.db
+*.sqlite
+*.sqlite3
+api/app/db/sessions.sqlite3
+api/app/db/*.sqlite3
+
+# Node / React
+web/node_modules/
+web/dist/
+web/.env
+web/.env.*
+
+# Logs
+*.log
+logs/
+
+api/logs/
+api/*.log
+
+web/logs/
+web/*.log
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
+web/pnpm-debug.log*
+web/lerna-debug.log*
+web/tmp/*
+
+# Dependencies
+web/node_modules
+web/dist
+web/dist-ssr
+web/*.local
+
+web/coverage
+web/.parcel-cache
+
+web/*.suo
+web/*.ntvs*
+web/*.njsproj
+web/*.sln
+web/*.sw?
+
+web/src/App_mobile_hotfix_MINIMO.css
+web/src/_App.css
+
+
+# Reports gerados localmente
+api/reports/*
+!api/reports/.gitkeep
+
+# Docs
+docs/*
+!docs/.gitkeep
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+!.vscode/extensions.json
